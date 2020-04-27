@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 
-class ThreadActivity : AppCompatActivity() {
+class NewThreadActivity : AppCompatActivity() {
 
     companion object {
         val TAG = "newthread"
@@ -13,12 +13,12 @@ class ThreadActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_thread)
+        setContentView(R.layout.activity_new_thread)
 
-        supportActionBar?.title = "THREAD LIST"
+        supportActionBar?.title = "NEW THREAD"
 
         val board = intent.getParcelableExtra<Board>(BoardActivity.USER_KEY)
 
-        Log.d(NewThreadActivity.TAG,"seq : ${board.seq},  boardname : ${board.name} ")
+        Log.d(TAG,"seq : ${board.seq},  boardname : ${board.name} ")
     }
 }
