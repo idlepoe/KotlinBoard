@@ -19,6 +19,7 @@ class NewThreadActivity : AppCompatActivity() {
 
         val board = intent.getParcelableExtra<Board>(BoardActivity.USER_KEY)
 
-        Log.d(TAG,"seq : ${board.seq},  boardname : ${board.name} ")
+        Log.d(NewThreadActivity.TAG, "seq : ${board.seq},  boardname : ${board.name} ")
+
     }
 }

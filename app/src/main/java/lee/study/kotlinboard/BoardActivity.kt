@@ -28,6 +28,8 @@ class BoardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_board)
 
+        supportActionBar?.title = "Board List"
+
         boardlist_recyclerview_board.adapter = adapter
 
         getBoardList()
